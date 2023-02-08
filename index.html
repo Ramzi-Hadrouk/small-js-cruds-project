@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cruds.css">
+    <title>Cruds_Project_Ramzi</title>
+</head>
+<body> 
+    <div class="crud">
+        <div class="head">
+            <h2>CRUDS Project</h2>
+            <p> Create , Read , Update , Delete ,Search</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Title" id="title">
+            <div class="inputsline">
+                <input onkeyup="getTotal()" type="number" placeholder="Price" id="price">
+                <input onkeyup="getTotal()" type="number" placeholder="Taxes" id="taxes">  
+                <input onkeyup="getTotal()" type="number" placeholder="Ads" id="ads">  
+                <input onkeyup="getTotal()" type="number" placeholder="Discount" id="discount">  
+                <small id="total"></small>
+            </div>
+            <input type="number" placeholder="Count" id="count"required> 
+            <input type="text" placeholder="Category" id="category">
+            
+            <div id="btn-continer1"><button id="submit">Create</button></div>
+        </div>
+       
+        <div class="outputs">
+            <div class="search-block">
+                <input type="text" placeholder="Search" onkeyup="search()" id="search">
+                <div class="btn-search">
+                    <button id="search-title"    onclick="getSearchMode(this.id)">Search By Title</button>
+                    <button id="search-category" onclick="getSearchMode(this.id)">Search By Categry </button>
+                </div>
+
+            </div>
+            <div id="btn-continer2"></div>
+         <table>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Ads</th>
+                <th>Discount</th>
+                <th>Totale</th>
+                <th>Category</th>
+                <th>Update</th>
+                <th >Delete</th>
+            </tr>
+            <tbody id="tbody">
+
+
+            </tbody>
+
+         </table>      
+        </div>
+    </div>
+    <script src="cruds.js"></script>
+</body>
+</html>

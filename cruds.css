@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #222;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+
+    text-align: center;
+    font-size: large;
+    margin: 3% 0%;
+    color:  rgb(255, 255, 255);
+    width: 100%;
+}
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #111;
+    padding: 1%;
+    margin: 0.2% 0%;
+    color: white;
+    font-size: 120%;
+    
+}
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgb(73, 73, 25);
+    padding: 1%;
+    margin:0.2% ;
+    color: white;
+    font-size: 120%;
+    transition: 0.5s;
+
+}
+
+.inputsline input{
+    width: calc(100%/5.5);
+}
+#total{
+    font-size: 120%;
+    border-radius: 5px;
+    padding: 0.6%;
+    margin: 0.2% 0%;
+    background-color: rgb(90, 7, 7);
+    
+}
+#total::before{
+    content: "Total =  ";
+}
+
+input:focus{
+    background-color:#000 ;
+    transform: scale(1.03);
+}
+::placeholder { 
+    color: rgb(188, 185, 164);
+    font-size: 80%;
+    
+  }
+button:hover{
+    background-color: rgb(121, 121, 44);
+    letter-spacing: 2px;
+
+
+}
+#total:hover{
+    background-color: rgb(117, 9, 9);
+
+}
+.btn-search{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-search button{
+  max-width: 40%;
+ 
+}
+
+table{
+    width: 100%;
+    margin-top: 1%;
+    border: solid white 1px;
+    border-radius: 10px;
+     text-align: center;
+   
+}
+ th,td{
+    padding: 0.5%;
+ }
+#delete,#update:hover{
+    letter-spacing: 0;
+}
+#delete{
+    background-color: #C0392B ;
+}
+#update{
+    background-color:#2980B9 ;
+}
+
+#btn-continer1,#btn-continer2 
+{
+    width: 100%;
+    margin: 1% 0% 0% 0%;
+    display: flex;
+    justify-content: center;
+}
